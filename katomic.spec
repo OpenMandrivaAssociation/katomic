@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	4.12.4
+Version:	4.13.2
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -36,6 +36,9 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %makeinstall_std -C build
 
 %changelog
+* Wed Jun 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.2-1
+- New version 4.13.2
+
 * Wed Apr 02 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.4-1
 - New version 4.12.4
 
