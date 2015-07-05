@@ -9,6 +9,7 @@ URL:		http://games.kde.org/game.php?game=katomic
 Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5NotifyConfig)
 
 %description
 KAtomic is a fun educational game built around molecular geometry.
