@@ -16,14 +16,15 @@ KAtomic is a fun educational game built around molecular geometry.
 It employs simplistic two-dimensional looks at different chemical elements.
 
 %files
-%{_kde_bindir}/katomic
-%{_kde_applicationsdir}/katomic.desktop
-%{_kde_docdir}/*/*/katomic
-%{_kde_iconsdir}/hicolor/*/apps/katomic.png
-%{_kde_appsdir}/katomic
-%{_kde_configdir}/katomic.knsrc
-%{_kde_appsdir}/kconf_update/katomic-levelset-upd.pl
-%{_kde_appsdir}/kconf_update/katomic-levelset.upd
+%doc %{_docdir}/HTML/*/katomic
+%{_sysconfdir}/xdg/katomic.knsrc
+%{_bindir}/katomic
+%{_datadir}/appdata/katomic.appdata.xml
+%{_datadir}/applications/org.kde.katomic.desktop
+%{_iconsdir}/hicolor/*/apps/katomic.png
+%{_datadir}/katomic
+%{_datadir}/kconf_update/katomic-levelset-upd*
+%{_datadir}/kxmlgui5/katomic/katomicui.rc
 
 #------------------------------------------------------------------------------
 
