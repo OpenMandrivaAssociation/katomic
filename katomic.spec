@@ -1,6 +1,6 @@
 Name:		katomic
-Version:	15.04.3
-Release:	2
+Version:	15.08.0
+Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
@@ -23,7 +23,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %{_datadir}/applications/org.kde.katomic.desktop
 %{_iconsdir}/hicolor/*/apps/katomic.png
 %{_datadir}/katomic
-%{_datadir}/kconf_update/katomic-levelset-upd*
+%{_datadir}/kconf_update/katomic-levelset*
 %{_datadir}/kxmlgui5/katomic/katomicui.rc
 
 #------------------------------------------------------------------------------
