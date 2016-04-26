@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -20,7 +20,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %doc %{_docdir}/HTML/*/katomic
 %{_sysconfdir}/xdg/katomic.knsrc
 %{_bindir}/katomic
-%{_datadir}/appdata/katomic.appdata.xml
+%{_datadir}/appdata/org.kde.katomic.appdata.xml
 %{_datadir}/applications/org.kde.katomic.desktop
 %{_iconsdir}/hicolor/*/apps/katomic.png
 %{_datadir}/katomic

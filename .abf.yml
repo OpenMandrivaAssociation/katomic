@@ -1,4 +1,2 @@
-removed_sources:
-  katomic-15.08.0.tar.xz: 666124d75d0a77126d849bb5657f5acad5a3f7d4
 sources:
-  katomic-15.12.3.tar.xz: 27d8cf274aacd220df857a937516a7d0cc857ce3
+  katomic-16.04.0.tar.xz: aead25bb9d0b10eb280091c19fad8d2839a4261c
