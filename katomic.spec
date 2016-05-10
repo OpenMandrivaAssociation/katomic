@@ -11,6 +11,7 @@ BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 KAtomic is a fun educational game built around molecular geometry.
