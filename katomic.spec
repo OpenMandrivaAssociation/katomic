@@ -1,12 +1,13 @@
 Name:		katomic
-Version:	16.12.2
+Version:	17.03.80
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=katomic
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(KF5NotifyConfig)
@@ -21,7 +22,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %doc %{_docdir}/HTML/*/katomic
 %{_sysconfdir}/xdg/katomic.knsrc
 %{_bindir}/katomic
-%{_datadir}/appdata/org.kde.katomic.appdata.xml
+%{_datadir}/metainfo/org.kde.katomic.appdata.xml
 %{_datadir}/applications/org.kde.katomic.desktop
 %{_iconsdir}/hicolor/*/apps/katomic.png
 %{_datadir}/katomic
