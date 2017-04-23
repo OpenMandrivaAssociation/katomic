@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -18,8 +18,7 @@ BuildRequires:	cmake(KF5Crash)
 KAtomic is a fun educational game built around molecular geometry.
 It employs simplistic two-dimensional looks at different chemical elements.
 
-%files
-%doc %{_docdir}/HTML/*/katomic
+%files -f katomic.lang
 %{_sysconfdir}/xdg/katomic.knsrc
 %{_bindir}/katomic
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
@@ -40,4 +39,4 @@ It employs simplistic two-dimensional looks at different chemical elements.
 
 %install
 %ninja_install -C build
-
+%find_lang katomic --with-html
