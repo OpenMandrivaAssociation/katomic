@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   katomic-17.12.1.tar.xz: ee739ab68963521c327d80b063dd3dc45e6f5588
+sources:
+  katomic-17.12.2.tar.xz: 0f9cba65097f3e6607184acbdd0c0cd7b2877915
