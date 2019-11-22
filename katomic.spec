@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	19.08.3
+Version:	19.11.80
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -8,7 +8,6 @@ License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=katomic
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-Patch0:		katomic-19.08.2-qt-5.14.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(KF5KDEGames)
