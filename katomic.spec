@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -35,6 +35,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %{_datadir}/katomic
 %{_datadir}/kconf_update/katomic-levelset*
 %{_datadir}/kxmlgui5/katomic/katomicui.rc
+%{_datadir}/qlogging-categories5/katomic.categories
 
 #------------------------------------------------------------------------------
 
