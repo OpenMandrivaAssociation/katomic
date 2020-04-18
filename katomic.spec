@@ -1,6 +1,6 @@
 Name:		katomic
-Version:	20.03.90
-Release:	2
+Version:	20.04.0
+Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
