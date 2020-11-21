@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
@@ -27,7 +27,7 @@ KAtomic is a fun educational game built around molecular geometry.
 It employs simplistic two-dimensional looks at different chemical elements.
 
 %files -f katomic.lang
-%{_sysconfdir}/xdg/katomic.knsrc
+%{_datadir}/knsrcfiles/katomic.knsrc
 %{_bindir}/katomic
 %{_datadir}/metainfo/org.kde.katomic.appdata.xml
 %{_datadir}/applications/org.kde.katomic.desktop
