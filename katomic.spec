@@ -1,5 +1,5 @@
 Name:		katomic
-Version:	23.08.1
+Version:	23.08.2
 Release:	1
 Epoch:		1
 Summary:	Build complex atoms with a minimal amount of moves
