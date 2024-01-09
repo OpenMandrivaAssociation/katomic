@@ -10,7 +10,7 @@ URL:		http://games.kde.org/game.php?game=katomic
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/katomic-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
-BuildRequires:	cmake(KF6KDEGames)
+BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(KF6NotifyConfig)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6CoreAddons)
@@ -39,7 +39,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup -p1 -n katomic-%{version}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
