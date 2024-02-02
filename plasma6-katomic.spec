@@ -1,5 +1,5 @@
 Name:		plasma6-katomic
-Version:	24.01.90
+Version:	24.01.95
 Release:	1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
