@@ -1,12 +1,19 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-katomic
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=katomic
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/games/katomic/-/archive/%{gitbranch}/katomic-%{gitbranchd}.tar.bz2#/katomic-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/katomic-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(KDEGames6)
@@ -38,7 +45,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n katomic-%{version}
+%autosetup -p1 -n katomic-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
