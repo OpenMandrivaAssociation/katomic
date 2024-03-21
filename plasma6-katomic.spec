@@ -2,8 +2,8 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-katomic
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
@@ -39,7 +39,6 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %{_datadir}/applications/org.kde.katomic.desktop
 %{_iconsdir}/hicolor/*/apps/katomic.png
 %{_datadir}/katomic
-%{_datadir}/kconf_update/katomic-levelset*
 %{_datadir}/qlogging-categories6/katomic.categories
 
 #------------------------------------------------------------------------------
