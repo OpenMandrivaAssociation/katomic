@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-katomic
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
@@ -40,6 +40,7 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %{_iconsdir}/hicolor/*/apps/katomic.png
 %{_datadir}/katomic
 %{_datadir}/qlogging-categories6/katomic.categories
+%{_datadir}/qlogging-categories6/katomic.renamecategories
 
 #------------------------------------------------------------------------------
 
