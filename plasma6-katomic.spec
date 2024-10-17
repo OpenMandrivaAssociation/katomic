@@ -7,7 +7,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=katomic
+URL:		https://games.kde.org/game.php?game=katomic
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/katomic/-/archive/%{gitbranch}/katomic-%{gitbranchd}.tar.bz2#/katomic-%{git}.tar.bz2
