@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		katomic
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Build complex atoms with a minimal amount of moves
 Group:		Graphical desktop/KDE
@@ -27,6 +27,10 @@ BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KF6NewStuff)
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6DBusAddons)
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
+%rename plasma6-katomic
 
 %description
 KAtomic is a fun educational game built around molecular geometry.
@@ -41,18 +45,3 @@ It employs simplistic two-dimensional looks at different chemical elements.
 %{_datadir}/katomic
 %{_datadir}/qlogging-categories6/katomic.categories
 %{_datadir}/qlogging-categories6/katomic.renamecategories
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n katomic-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang katomic --with-html
